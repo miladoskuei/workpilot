@@ -18,3 +18,5 @@ The architecture follows a multi-tenant approach where users belong to companies
 - One task is assigned to exactly one project member
 - Companies are isolated from each other
 - Productivity tracking is based on work sessions
+
+https://dbdiagram.io/d/6a600439c3a90dd98d890e6f
