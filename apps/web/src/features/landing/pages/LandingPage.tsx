@@ -1,28 +1,30 @@
-import { Box, Button, Typography, useTheme } from "@mui/material";
-
+import Hero from "../components/Hero";
+import TrustedCompanies from "../components/TrustedCompanies";
+import Features from "../components/Features";
+import Productivity from "../components/Productivity";
+import Analytics from "../components/Analytics";
+import HowItWorks from "../components/HowItWorks";
+import Pricing from "../components/Pricing";
+import CTA from "../components/CTA";
 
 export default function LandingPage() {
-
-   const theme = useTheme();
-
-  console.log("Primary:", theme.palette.primary.main);
-  console.log("Text Primary:", theme.palette.text.primary);
   return (
-    <Box sx={{ p: 5 }}>
-      <Typography 
-  variant="h1"
-  sx={{ color: "text.primary" }}
->
-  WorkPilot
-</Typography>
+    <>
+      <Hero />
 
-      <Typography variant="body1">
-        Work Management & Productivity Analytics Platform
-      </Typography>
+      <TrustedCompanies />
 
-      <Button variant="contained">
-        Get Started
-      </Button>
-    </Box>
+      <Features />
+
+      <Productivity />
+
+      <Analytics />
+
+      <HowItWorks />
+
+      <Pricing />
+
+      <CTA />
+    </>
   );
 }

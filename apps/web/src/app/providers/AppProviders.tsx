@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 
 import QueryProvider from "./QueryProvider";
 import ThemeProvider from "./ThemeProvider";
+import AuthProvider from "./AuthProvider";
 
 interface AppProvidersProps {
   children: ReactNode;
@@ -14,9 +15,11 @@ export default function AppProviders({
   
   <ThemeProvider>
 
+<AuthProvider>
   <QueryProvider>
-      {children}
+    {children}
   </QueryProvider>
+</AuthProvider>
 
 </ThemeProvider>
 
